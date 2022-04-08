@@ -1,0 +1,45 @@
+// Gilory, Light
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("~static/fonts/Gilroy-Light.eot"); // IE9 Compat Modes
+  src: url("~static/fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), // IE6-IE8
+    url("~static/fonts/Gilroy-Light.otf") format("opentype"), // Open Type Font
+    url("~static/fonts/Gilroy-Light.ttf") format("truetype"), // Safari, Android, iOS
+    url("~static/fonts/Gilroy-Light.woff") format("woff"), // Modern Browsers
+    url("~static/fonts/Gilroy-Light.woff2") format("woff2"); // Modern Browsers
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+
+  How use:
+  selector {
+    font-family: 'Gilroy-Light', sans-serif;
+  }
+
+*/
+
+// Gilory, Regular
+@font-face {
+  font-family: "Gilroy";
+  src: url("~static/fonts/Gilroy-Regular.eot"); // IE9 Compat Modes
+  src: url("~static/fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), // IE6-IE8
+  url("~static/fonts/Gilroy-Regular.ttf") format("truetype"), // Safari, Android, iOS
+  url("~static/fonts/Gilroy-Regular.woff") format("woff"), // Modern Browsers
+  url("~static/fonts/Gilroy-Regular.woff2") format("woff2"); // Modern Browsers
+  font-weight: normal;
+  font-style: normal;
+}
+
+// ---------------------------------------------------------------------------------------------
+
+// Roboto Slab, Bold (use google font)
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+/*
+
+  How use:
+  selector {
+    font-family: 'Roboto Slab', serif;
+  }
+
+*/

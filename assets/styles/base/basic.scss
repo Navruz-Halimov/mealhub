@@ -1,0 +1,244 @@
+// Import reset css -----
+@import 'reset';
+
+:root {
+  --vh: 1%;
+  @media screen and (min-width: 992px) {
+    overflow: hidden;
+  }
+}
+
+// Basic style for project -----
+// style for root element
+html {
+  font-family: $ff-gilroy;
+  background-color: $bgc-green;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  font-family: $ff-gilroy;
+  background-color: $bgc-green;
+  background-image: url('/images/backgroundMain.png');
+  background-size: auto 35vh;
+  background-size: auto calc(var(--vh) * 35);
+}
+
+// style for scrollbar
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  -webkit-overflow-scrolling: touch;
+
+  @media screen and (min-width: 992px) {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px 10px $c-light;
+  border: solid 3px transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 10px 10px $c-green;
+  border: solid 3px transparent;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $c-green;
+  border-right: 2px transparent solid;
+  background-clip: padding-box;
+}
+
+// style for scrollbar Firefox
+html,
+body {
+  scrollbar-color: $c-green $c-light;
+  scrollbar-width: thin;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::-o-outer-spin-button,
+input::-o-inner-spin-button {
+  -o-appearance: none;
+  margin: 0;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield !important;
+}
+input[type='number']:hover,
+input[type='number']:focus {
+  -moz-appearance: number-input;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+// TOOLTIP
+.tooltip {
+  display: block !important;
+  z-index: 10000;
+
+  .tooltip-inner {
+    background: white;
+    color: black;
+    border: #f3bd44 1px solid;
+    border-radius: 7px;
+    //padding: 5px 10px 4px;
+    max-width: 220px;
+    font-size: 14px;
+    padding: 15px 12px;
+  }
+
+  .tooltip-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    margin: 5px;
+    border-color: #f3bd44;
+    z-index: 1;
+  }
+
+  &[x-placement^='top'] {
+    margin-bottom: 5px;
+
+    .tooltip-arrow {
+      border-width: 5px 5px 0 5px;
+      border-left-color: transparent !important;
+      border-right-color: transparent !important;
+      border-bottom-color: transparent !important;
+      bottom: -5px;
+      left: calc(50% - 5px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &[x-placement^='bottom'] {
+    margin-top: 5px;
+
+    .tooltip-arrow {
+      border-width: 0 5px 5px 5px;
+      border-left-color: transparent !important;
+      border-right-color: transparent !important;
+      border-top-color: transparent !important;
+      top: -5px;
+      left: calc(50% - 5px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &[x-placement^='right'] {
+    margin-left: 5px;
+
+    .tooltip-arrow {
+      border-width: 5px 5px 5px 0;
+      border-left-color: transparent !important;
+      border-top-color: transparent !important;
+      border-bottom-color: transparent !important;
+      left: -5px;
+      top: calc(50% - 5px);
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &[x-placement^='left'] {
+    margin-right: 5px;
+
+    .tooltip-arrow {
+      border-width: 5px 0 5px 5px;
+      border-top-color: transparent !important;
+      border-right-color: transparent !important;
+      border-bottom-color: transparent !important;
+      right: -5px;
+      top: calc(50% - 5px);
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &[aria-hidden='true'] {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.15s, visibility 0.15s;
+  }
+
+  &[aria-hidden='false'] {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.15s;
+  }
+}
+
+.mx-datepicker-main.mx-datepicker-popup .cell.active {
+  background: #21bc96;
+  display: inline-flex;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4rem;
+}
+.mx-datepicker-main .active,
+.res_input.time .dropdown .active {
+  background: #21bc96;
+}
+
+.mx-time-column .mx-time-item.active {
+  color: #21bc96 !important;
+}
+
+.service-calendar .mx-input,
+.birthdayDatePicker .mx-input,
+.pickupDatePicker .mx-input {
+  cursor: pointer;
+  background: linear-gradient(-90deg, #e2e2e2 4rem, transparent 4rem);
+}
+.mx-icon-calendar {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: url(~static/icons/calendar.svg) no-repeat;
+  background-size: contain;
+  cursor: pointer;
+
+  @media screen and (min-width: 1281px) {
+    right: 12px !important;
+  }
+}
+.service-calendar .mx-input,
+.birthdayDatePicker .mx-input,
+.pickupDatePicker .mx-input {
+  background: linear-gradient(-90deg, #e2e2e2 4rem, transparent 4rem);
+}
+
+.mx-icon-calendar svg {
+  display: none;
+}

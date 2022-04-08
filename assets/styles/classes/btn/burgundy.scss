@@ -1,0 +1,43 @@
+@mixin btn-burgundy {
+  background: transparent linear-gradient(270deg, #EC608F 0%, #B4476C 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #EC608F40;
+  border-radius: 999px;
+  padding: .5em 2.5em;
+  font-family: $ff-gilroy;
+  font-weight: 300;
+  font-size: 18px;
+  color: $c-light;
+}
+
+%btn-burgundy {
+  background: transparent linear-gradient(270deg, #EC608F 0%, #B4476C 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #EC608F40;
+  border-radius: 999px;
+  padding: .5em 2.5em;
+  font-family: $ff-gilroy;
+  font-weight: 300;
+  font-size: 18px;
+  color: $c-light;
+}
+
+@mixin btn-orange {
+  background: transparent linear-gradient(270deg, #FDBF3E 0%, #FFCA5A 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 999px;
+  padding: .5em 2.5em;
+  font-family: $ff-gilroy;
+  font-weight: 300;
+  font-size: 18px;
+  color: $c-light;
+}
+
+%btn-orange {
+  background: transparent linear-gradient(270deg, #FDBF3E 0%, #FFCA5A 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 999px;
+  padding: .5em 2.5em;
+  font-family: $ff-gilroy;
+  font-weight: 300;
+  font-size: 18px;
+  color: $c-light;
+}

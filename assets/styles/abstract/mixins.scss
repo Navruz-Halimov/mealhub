@@ -1,0 +1,14 @@
+@mixin linear-gradient($deg, $first, $second) {
+  background: -webkit-linear-gradient($deg, $first, $second);
+  background: -moz-linear-gradient($deg, $first, $second);
+  background: -o-linear-gradient($deg, $first, $second);
+  background: linear-gradient($deg, $first, $second);
+}
+@mixin textWrapper($property) {
+  display: -webkit-box !important;
+  -webkit-line-clamp: $property !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  // word-break: break-all !important;
+}

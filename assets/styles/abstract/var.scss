@@ -1,0 +1,53 @@
+// Variable for FONTS
+$ff-gilroy: 'Gilroy-Light', sans-serif;
+$ff-roboto: 'Roboto Slab', serif;
+$ff-gilroy-reg: 'Gilroy-Regular', sans-serif;
+
+$fz-md-high: 20px;
+$fz-md-medium: 18px;
+$fz-md-low: 16px;
+$fz-md-sm: 14px;
+
+// Variable for COLORS
+$light: #fff;
+$dark: #111;
+$orange: #f3bd44;
+$green: #21bc96;
+$magenta: #b6486d;
+$error: #ff5f91;
+$disabled: #cecece;
+
+$c-primary: #111;
+$c-secondary: $dark;
+$c-light: $light;
+$c-green: $green;
+$c-magenta: #b6486d;
+$c-promotion: #eb618d;
+
+$c-error: #eb608f;
+
+$c-line: #e2e2e2;
+$c-icon-grey: #a2a2a2;
+$c-icon-green: #1da891;
+$c-icon-burg: #ba4a70;
+$c-icon-hover: #5c5c5c;
+$c-input-placeholder: #969696;
+
+$bgc-light: $light;
+$bgc-green: #24a391;
+
+$bgc-btn-light: $bgc-light;
+$bgc-btn-active: $orange;
+$bgc-btn-gradient-from: #febf32;
+$bgc-btn-gradient-to: #ff5f91;
+
+$hover: rgba(247, 174, 17, 0.36863);
+$social-icons-footer: #a7a7a7;
+// Variable for default BORDER RADIUS
+$br-block-desktop: 4px;
+$br-block-mobile: 10px;
+$br-btn: 50%;
+
+// Variable for MARGIN / PADDING
+$p-side: 25px;
+$m-between-block: 15px;
